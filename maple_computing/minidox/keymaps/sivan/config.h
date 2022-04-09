@@ -1,6 +1,13 @@
-#define IGNORE_MOD_TAP_INTERRUPT
-#define PERMISSIVE_HOLD
-#define TAPPING_TERM 180
+#ifndef CONFIG_USER_H
+#define CONFIG_USER_H
+
+#include "../../config.h"
+
+#define USE_SERIAL
+
+#define EE_HANDS
+
+#endif
 
 // Mouse key speed and acceleration.
 #undef MOUSEKEY_DELAY
@@ -14,13 +21,6 @@
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
 
-#pragma once
-
-#include "config_common.h"
-
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 5
-#define DIODE_DIRECTION COL2ROW
-#define DEBOUNCE 5
-#define LOCKING_SUPPORT_ENABLE
-#define LOCKING_RESYNC_ENABLE
+#define IGNORE_MOD_TAP_INTERRUPT
+#define PERMISSIVE_HOLD
+#define TAPPING_TERM 190
