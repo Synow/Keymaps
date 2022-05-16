@@ -1,5 +1,6 @@
 # My QMK keymaps
-* The Minidox
-* The Draculad
+* Minidox
+* Draculad
+* Chocolad
 
 More to come.
