@@ -7,6 +7,7 @@ BOOTLOADER = caterina
 # Build Options
 #   change yes to no to disable
 #
+TAP_DANCE_ENABLE = yes      # Tap dance 
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
@@ -20,3 +21,5 @@ AUDIO_ENABLE = no           # Audio output
 SPLIT_KEYBOARD = yes
 
 DEFAULT_FOLDER = maple_computing/minidox/rev1
+CAPS_WORD_ENABLE = yes
+
