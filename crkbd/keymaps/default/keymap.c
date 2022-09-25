@@ -20,9 +20,9 @@ enum layer_number {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] =  LAYOUT(
-KC_1, KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,                 KC_Y, KC_U,         KC_I,           KC_O,         KC_P, KC_0,
-KC_1, LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G,                 KC_H, RCTL_T(KC_J), RSFT_T(KC_K),   LALT_T(KC_L), RGUI_T(KC_SCLN), KC_0,
-KC_1, LSFT_T(KC_Z), KC_X,         MEH_T(KC_C),  TD(TD_F13),   KC_B,                 KC_N, TD(TD_F14),   MEH_T(KC_COMM), KC_DOT,       RSFT_T(KC_SLSH),KC_0,
+_______, KC_Q,         KC_W,         KC_E,         KC_R,         KC_T,                 KC_Y, KC_U,         KC_I,           KC_O,         KC_P,            _______,
+KC_F13,  LGUI_T(KC_A), LALT_T(KC_S), LSFT_T(KC_D), LCTL_T(KC_F), KC_G,                 KC_H, RCTL_T(KC_J), RSFT_T(KC_K),   LALT_T(KC_L), RGUI_T(KC_SCLN), KC_F14,
+_______, LSFT_T(KC_Z), KC_X,         MEH_T(KC_C),  KC_V,         KC_B,                 KC_N, KC_M,         MEH_T(KC_COMM), KC_DOT,       RSFT_T(KC_SLSH), _______,
                LT(_NUM,KC_ESC), LT(_SYMB,KC_SPC), LT(_NAV,KC_TAB),  LT(_FUNC,KC_ENT), LT(_SYMB,KC_BSPC), LT(_MUS,KC_DEL)
     ),
     [_NUM] = LAYOUT(
