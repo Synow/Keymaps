@@ -1,11 +1,6 @@
 #pragma once
-#include "config_common.h"
 
-#define VENDOR_ID 0xFEED
-#define PRODUCT_ID 0x1B1E
-#define DEVICE_VER 0x0001
-#define MANUFACTURER mangoiv
-#define PRODUCT draculad
+#include "config_common.h"
 
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 5
@@ -17,14 +12,7 @@
 
 #define DEBOUNCE 5
 
-
-#define USE_SERIAL
 #define SOFT_SERIAL_PIN D2
-
-#ifdef OLED_ENABLE
-  #define OLED_DISPLAY_128X64
-  #define OLED_TIMEOUT 30000
-#endif
 
 #define RGB_DI_PIN D3
 #ifdef RGB_DI_PIN
@@ -43,14 +31,18 @@
 #define ENCODERS_PAD_A {B2 , B4}
 #define ENCODERS_PAD_B {B6 , B5}
 
-#define ENCODER_RESOLUTIONS { 4, 4, 4, 1}
-#define UNUSED_PINS
+#define ENCODER_RESOLUTIONS { 4, 4 }
+#define ENCODER_RESOLUTIONS_RIGHT { 4, 1 }
 
 #define EE_HANDS
 
 #define LAYER_STATE_8BIT
 
-// Mouse key speed and acceleration.
+// Configure the OLED screen to reduce burn-in
+//#define OLED_TIMEOUT 10000
+//#define OLED_BRIGHTNESS 80
+//#define OLED_ENABLE
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #undef MOUSEKEY_DELAY
 #define MOUSEKEY_DELAY          0
 #undef MOUSEKEY_INTERVAL
@@ -58,10 +50,11 @@
 #undef MOUSEKEY_WHEEL_DELAY
 #define MOUSEKEY_WHEEL_DELAY    0
 #undef MOUSEKEY_MAX_SPEED
-#define MOUSEKEY_MAX_SPEED      6
+#define MOUSEKEY_MAX_SPEED      8
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX    64
 
 #define IGNORE_MOD_TAP_INTERRUPT
 #define PERMISSIVE_HOLD
 #define TAPPING_TERM 190
+
