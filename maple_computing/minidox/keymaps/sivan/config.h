@@ -1,15 +1,10 @@
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
-
-#include "../../config.h"
-
-#define USE_SERIAL
-
-#define EE_HANDS
-
-#endif
-
-// Mouse key speed and acceleration.
+#pragma once
+// Configure the OLED screen to reduce burn-in
+//#define OLED_TIMEOUT 10000
+//#define OLED_BRIGHTNESS 80
+//#define OLED_ENABLE
+#define MASTER_RIGHT
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 #undef MOUSEKEY_DELAY
 #define MOUSEKEY_DELAY          0
 #undef MOUSEKEY_INTERVAL
@@ -24,4 +19,4 @@
 #define IGNORE_MOD_TAP_INTERRUPT
 #define PERMISSIVE_HOLD
 #define TAPPING_TERM 190
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
